@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="appRoot">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+	<!-- bower:css -->
+	<link rel="stylesheet" href="./bower_components/toastr/toastr.css" />
+	<!-- endbower -->
+</head>
+<body>
+	<div>
+		@RenderBody()
+	</div>
+
+	<!-- bower:js -->
+	<script src="./bower_components/angular/angular.js"></script>
+	<script src="./bower_components/jquery/dist/jquery.js"></script>
+	<script src="./bower_components/toastr/toastr.js"></script>
+	<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="./bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+	<script src="./bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="./bower_components/angular-animate/angular-animate.js"></script>
+	<script src="./bower_components/angular-aria/angular-aria.js"></script>
+	<!-- endbower -->
+	<!-- inject:js -->
+	<script src="./app/appRoot/app.module.js"></script>
+	<script src="./app/appRoot/layout/layout.module.js"></script>
+	<script src="./app/appRoot/core/core.module.js"></script>
+	<script src="./app/appRoot/blocks/diagnostics/diagnostics.module.js"></script>
+	<script src="./app/appRoot/blocks/exception/exception.module.js"></script>
+	<script src="./app/appRoot/blocks/logger/logger.module.js"></script>
+	<script src="./app/appRoot/blocks/router/router.module.js"></script>
+	<script src="./app/appRoot/features/about/about.module.js"></script>
+	<script src="./app/appRoot/features/home/home.module.js"></script>
+	<script src="./app/appRoot/core/core.route.js"></script>
+	<script src="./app/appRoot/features/about/about.route.js"></script>
+	<script src="./app/appRoot/features/home/home.route.js"></script>
+	<script src="./app/appRoot/layout/shell.controller.js"></script>
+	<script src="./app/appRoot/core/config.js"></script>
+	<script src="./app/appRoot/core/constants.js"></script>
+	<script src="./app/appRoot/core/dataservice.js"></script>
+	<script src="./app/appRoot/blocks/diagnostics/diagnostics.decorator.js"></script>
+	<script src="./app/appRoot/blocks/exception/exception-handler.provider.js"></script>
+	<script src="./app/appRoot/blocks/exception/exception.factory.js"></script>
+	<script src="./app/appRoot/blocks/logger/logger.js"></script>
+	<script src="./app/appRoot/blocks/router/routehelper.js"></script>
+	<script src="./app/appRoot/blocks/router/router-helper.provider.js"></script>
+	<script src="./app/appRoot/features/home/index/home.component.js"></script>
+	<!-- endinject -->
+	@RenderSection("scripts", required: false)
+</body>
+</html>

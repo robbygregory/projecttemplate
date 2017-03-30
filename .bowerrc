@@ -1,0 +1,4 @@
+{
+	"timeout": 300000,
+	"directory": "src/Web/bower_components"
+}
